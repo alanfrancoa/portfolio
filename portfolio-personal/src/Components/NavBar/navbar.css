@@ -2,7 +2,7 @@
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -22,9 +22,30 @@
     margin: 1rem;
     cursor: pointer;
 }
+.desktopMenuListItem:hover{
+    padding-bottom: 0.5rem;
+    border-bottom: 3px ridge yellow;
+}
+.desktopMenuBtn{
+    height: 3rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktopMenuBtn:hover{
+    border: 3px ridge yellow;
+}
 
 .desktopMenuImg{
     object-fit: cover;
     height: 1rem;
     width: auto;
+    margin: 0;
+    margin-right: 1rem;
 }
