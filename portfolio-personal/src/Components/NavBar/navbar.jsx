@@ -12,11 +12,11 @@ const NavBar = () => {
       <div className="desktopMenu">
         <Link to='https://www.google.com' className="desktopMenuListItem">Home</Link>
         <Link to='https://www.google.com' className="desktopMenuListItem">Sobre mi</Link>
-        <Link to='https://www.google.com' className="desktopMenuListItem">Portfolio</Link>
+        <Link to='https://www.google.com' className="desktopMenuListItem">Proyectos</Link>
         <Link to='https://www.google.com' className="desktopMenuListItem">Skills</Link>
       </div>
       <button className='desktopMenuBtn'>
-        <img src={contact} alt='' className='desktopMenuImg' /> ContactMe
+        <img src={contact} alt='' className='desktopMenuImg' /> Contacto
       </button>
     </nav>
   )
