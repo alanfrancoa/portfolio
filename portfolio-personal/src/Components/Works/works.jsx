@@ -1,9 +1,22 @@
 //import React from 'react'
+import './works.css' 
+import portfolio from '../../assets/portfolio.png'
+import ImageWithTooltip from '../ToolTip/toolTip'
 
 const Works = () => {
   return (
     <section id="works">
-        Trabajos hechos.
+        <h2 className="worksTitle">Mi portfolio</h2>
+        <span className="worksDesc">Aqui agregare texto.</span>
+            <div className="worksImgs">
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            <ImageWithTooltip imageUrl={portfolio} title="Tres en raya" />
+            </div>
+            <button className="workBtn">Ver más</button>
     </section>
   )
 }

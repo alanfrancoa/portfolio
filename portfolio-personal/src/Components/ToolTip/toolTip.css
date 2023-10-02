@@ -1,0 +1,52 @@
+.image-container {
+    position: relative;
+    width: auto; /* Ajusta el tamaño de acuerdo a tus necesidades */
+    height: 300px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+    overflow: hidden;
+    margin: 8px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para ajustar la imagen al tamaño del contenedor */
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .image-container:hover .tooltip {
+    display: block;
+  }
+  .buttonRepo{
+    height: 2rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonRepo:hover{
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 2px ridge yellow;
+}
+.buttonRepo>img{
+  object-fit: cover;
+  height: 1rem;
+  width: auto;
+  margin: 0;
+  margin-right: 1rem;
+}
