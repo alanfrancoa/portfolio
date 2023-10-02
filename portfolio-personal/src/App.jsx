@@ -2,6 +2,7 @@
 import NavBar from './Components/NavBar/navbar'
 import Intro from './Components/Intro/intro'
 import About from './Components/About/about'
+import Works from './Components/Works/works'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
      <NavBar />
      <Intro />
      <About />
+     <Works />
     </>
   )
 }

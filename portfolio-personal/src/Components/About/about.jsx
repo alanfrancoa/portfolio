@@ -12,14 +12,14 @@ const About = () => {
             <div className="aboutMeBar">
                 <img src={webSiteDesign} alt="Creatividad" className="aboutMeImg" />
                 <div className="aboutMeBarText">
-                    <h2>Creatividad en Diseño</h2>
+                    <h2>Creatividad </h2>
                     <p>Mi experiencia en la industria de la belleza ha afinado mi sentido del diseño y el color, permitiéndome crear interfaces web visualmente atractivas y cautivadoras.</p>
                 </div>
             </div>
             <div className="aboutMeBar">
                 <img src={UIDesign} alt="Comunicacion y ensenanza" className="aboutMeImg" />
                 <div className="aboutMeBarText">
-                    <h2>Comunicación y Enseñanza Efectiva</h2>
+                    <h2>Comunicación </h2>
                     <p>Como docente, he desarrollado habilidades sólidas para comunicar conceptos técnicos de manera clara y accesible, lo que facilita la colaboración y la comprensión en proyectos web, como tambien para poder divulgar el conocimiento.</p>
                 </div>
             </div>

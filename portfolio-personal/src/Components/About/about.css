@@ -18,7 +18,7 @@
 
 }
 .aboutMeText{
-    font-size: 300;
+    font-size: 400;
     font-size: 1rem;
     max-width: 55rem;
     padding: 0 2rem;
@@ -40,4 +40,27 @@
     object-fit: cover;
     height: 3rem;
     width: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.aboutMeBarText>p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+@media screen and (max-width: 720px) {
+    .aboutMeBarTextM>p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutMeBarTextM>p{
+        font-size: 3vw;
+    }
+    .aboutMeImg{
+        height: 2rem;
+        width: auto;
+    }
+    .aboutMeBarText>h2{
+        font-size: 5vw;
+    }
 }
