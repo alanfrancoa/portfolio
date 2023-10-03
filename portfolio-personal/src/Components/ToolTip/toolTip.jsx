@@ -5,9 +5,10 @@ import gitHub from "../../assets/github.png"
 import imageLink from "../../assets/link.png"
 
 
-function ImageWithTooltip({ imageUrl, title }) {
+function ImageWithTooltip({ imageUrl, title, gitRepo, webSite }) {
   const [showTitle, setShowTitle] = useState(false);
-
+  console.log(gitRepo)
+  console.log(webSite)
   return (
     <div
       className="image-container"
@@ -24,6 +25,8 @@ function ImageWithTooltip({ imageUrl, title }) {
 }
 ImageWithTooltip.propTypes = {
     imageUrl: PropTypes.string.isRequired, // URL de la imagen
-    title: PropTypes.string.isRequired, // Título de la imagen
+    title: PropTypes.string.isRequired,
+    gitRepo: PropTypes.string.isRequired,
+    webSite: PropTypes.string.isRequired, 
   };
 export default ImageWithTooltip;
