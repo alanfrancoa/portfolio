@@ -1,20 +1,23 @@
-#intro{
+#intro {
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-}
-.bg{
+  }
+  
+  .bg {
     position: absolute;
-    top: -4rem;
-    right: 0;
+    top: 0rem;
+    left: 20%;
     z-index: -1;
-    object-fit: cover;
+    object-fit: none;
     height: 100vh;
-}
-.introContent{
+    size: 80vh;
+  }
+  
+  .introContent {
     height: 100vh;
     width: 100wh;
     padding: 1rem;
@@ -23,26 +26,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.hola{
+  }
+  
+  .hola {
     font-size: 1.75rem;
     font-weight: 100;
-}
-.introName{
+  }
+  
+  .introName {
     color: yellow;
-}
-.introPara{
+  }
+  
+  .introPara {
     font-size: medium;
     font-weight: 300;
     letter-spacing: 1px;
-}
-.buttonsIntro{
+  }
+  
+  .buttonsIntro {
     align-items: center;
     display: flex;
     margin-top: 1rem;
-}
-
-.introBtn{
+  }
+  
+  .introBtn {
     margin-right: 1rem;
     height: 3rem;
     border-radius: 2rem;
@@ -50,40 +57,45 @@
     background-color: transparent;
     color: white;
     padding: 0rem 1rem 0rem 1rem;
-    font-size: 1rem; 
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.introBtn:hover{
+  }
+  
+  .introBtn:hover {
     background-color: rgba(255, 255, 0, 0.2);
     border: 2px ridge yellow;
-}
-
-.imgBtn{
+  }
+  
+  .imgBtn {
     object-fit: cover;
     height: 1rem;
     width: auto;
     margin: 0;
     margin-right: 1rem;
-}
-
-@media screen and (max-width: 840px){
-    .bg{
-        right: -10vw;
-        align-items: flex-end;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .bg {
+      left: 0; /* Ajuste para pantallas más pequeñas */
     }
-    .introContent{
-        font-size: 10vw;
+  
+    .introContent {
+      font-size: 7vw;
     }
-    .hola{
-        font-size: 4.5vw;
+  
+    .hola {
+      font-size: 4.5vw;
     }
-}
-
-@media screen and (max-width: 480px){
-    .bg{
-        right: -70vw;
+    
+    .buttonsIntro {
+      flex-wrap: wrap; /* Hace que los botones se ajusten a la pantalla en lugar de ocultarse */
     }
-
-}
+  }
+  
+  @media screen and (max-width: 480px) {
+    .bg {
+      right: -70vw;
+    }
+  }
