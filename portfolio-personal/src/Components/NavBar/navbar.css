@@ -13,9 +13,9 @@
     z-index: 3;
 }
 
-.logo{
+.logo {
     object-fit: cover;
-    height: 4rem;
+    height: 3rem; /* Ajusta el tamaño de la imagen */
     width: auto;
 }
 
