@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import './SkillsProgressRing.css'
 
 const ProgressRing = ({ imageUrl, progress, color }) => {
-  const radius = 50;
-  const strokeWidth = 10;
+  const radius = 100;
+  const strokeWidth = 20;
   const normalizedRadius = radius - strokeWidth * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   const offset = circumference - (progress / 100) * circumference;
@@ -22,7 +22,7 @@ const ProgressRing = ({ imageUrl, progress, color }) => {
           cx={radius}
           cy={radius}
         />
-        <image xlinkHref={imageUrl} x="25" y="25" height="50" width="50" />
+        <image xlinkHref={imageUrl} x="50" y="50" height="100" width="100" />
       </svg>
     </div>
   )

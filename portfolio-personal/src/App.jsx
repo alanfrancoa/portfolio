@@ -3,8 +3,7 @@ import NavBar from './Components/NavBar/navbar'
 import Intro from './Components/Intro/intro'
 import About from './Components/About/about'
 import Works from './Components/Works/works'
-import SkillsProgressRing from './Components/Skills/SkillsProgressRing'
-import adobe from './assets/adobe.png'
+import Skills from './Components/Skills/Skills'
 
 function App() {
  return (
@@ -13,7 +12,7 @@ function App() {
      <Intro />
      <About />
      <Works />
-     <SkillsProgressRing imageUrl={adobe} progress={45} color='#875443'/>
+     <Skills/>
     </>
   )
 }
