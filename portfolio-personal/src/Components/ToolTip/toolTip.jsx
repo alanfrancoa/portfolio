@@ -6,9 +6,12 @@ import imageLink from "../../assets/link.png"
 
 
 function ImageWithTooltip({ imageUrl, title, gitRepo, webSite }) {
-  const [showTitle, setShowTitle] = useState(false);
-  console.log(gitRepo)
-  console.log(webSite)
+  const [showTitle, setShowTitle] = useState(false)
+
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div
       className="image-container"
@@ -18,8 +21,8 @@ function ImageWithTooltip({ imageUrl, title, gitRepo, webSite }) {
       <img src={imageUrl} alt="Imagen" />
       {showTitle && <div className="tooltip"> 
             <h3 className="repoImageTitle">{title}</h3>
-            <button className='buttonRepo'><img src={imageLink} alt="" /> Ir al sitio</button>
-            <button className='buttonRepo'><img src={gitHub} alt="" /> Ver codigo</button></div>}
+            <button className='buttonRepo' onClick={() => handleClick(webSite)}><img src={imageLink} alt="" /> Ir al sitio</button>
+            <button className='buttonRepo' onClick={() => handleClick(gitRepo)}><img src={gitHub} alt="" /> Ver codigo</button></div>}
     </div>
   );
 }
