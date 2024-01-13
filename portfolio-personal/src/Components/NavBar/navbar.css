@@ -51,3 +51,62 @@
     margin: 0;
     margin-right: 1rem;
 }
+
+/* Estilos para el menú hamburguesa */
+.mobileMenu {
+  display: none; /* Por defecto, oculto en pantallas grandes */
+}
+
+.mobileMenuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenuImg {
+  margin-right: 5px;
+}
+
+.mobileMenuItems {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #333;
+  width: 100%;
+  z-index: 1;
+}
+
+.mobileMenuItems a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none; /* Oculto en pantallas pequeñas */
+  }
+
+  .mobileMenu {
+    display: flex; /* Mostrado en pantallas pequeñas */
+  }
+
+  .desktopMenuBtn {
+    display: flex; /* Ajusta para mostrar el botón de contacto en pantallas grandes */
+  }
+
+  .logo {
+    height: 2rem; /* Ajusta el tamaño del logo en dispositivos móviles */
+  }
+
+  .mobileMenuImg {
+    height: 1.5rem; /* Ajusta el tamaño del logo en el menú hamburguesa */
+  }
+}
