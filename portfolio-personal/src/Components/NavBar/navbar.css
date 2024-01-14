@@ -1,55 +1,45 @@
-.navbar{
-    background-color: rgba(30, 30, 30, 0.56);
-    height: 5rem;
-    width: 100vw;
-    max-width: 75rem;
-    margin: 1rem auto;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+/* Estilos para el contenedor navbar */
+.navbar {
+  background-color: rgba(30, 30, 30, 0.56);
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
+/* Estilos para el logo */
 .logo {
-    object-fit: cover;
-    height: 3rem; /* Ajusta el tamaño de la imagen */
-    width: auto;
+  object-fit: contain;
+  height: 3rem; /* Ajusta el tamaño de la imagen */
+  width: auto;
 }
 
-.desktopMenuListItem{
-    margin: 1rem;
-    cursor: pointer;
-}
-.desktopMenuListItem:hover{
-    padding-bottom: 0.5rem;
-    border-bottom: 3px ridge yellow;
-}
-.desktopMenuBtn{
-    height: 3rem;
-    border-radius: 2rem;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    padding: 0rem 1rem 0rem 1rem;
-    font-size: 1rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.desktopMenuBtn:hover{
-    background-color: rgba(255, 255, 0, 0.2);
-    border: 2px ridge yellow;
+/* Estilos para los enlaces del menú */
+.desktopMenu {
+  display: flex;
+  align-items: center;
 }
 
-.desktopMenuImg{
-    object-fit: cover;
-    height: 1rem;
-    width: auto;
-    margin: 0;
-    margin-right: 1rem;
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px ridge yellow;
+}
+
+/* Alineación del logo a la izquierda */
+.logo {
+  order: -1;
 }
 
 /* Estilos para el menú hamburguesa */
