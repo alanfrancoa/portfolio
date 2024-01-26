@@ -17,8 +17,10 @@
 /* Estilos para el logo */
 .logo {
   object-fit: contain;
-  height: 3rem; /* Ajusta el tamaño de la imagen */
-  width: auto;
+  height: 3rem;
+  /* Ajusta el tamaño de la imagen */
+  width: 3rem;
+  z-index: 0;
 }
 
 /* Estilos para los enlaces del menú */
@@ -27,9 +29,12 @@
   align-items: center;
 }
 
+/* Estilos para los enlaces del menú */
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff; /* Color predeterminado para los enlaces no visitados */
 }
 
 .desktopMenuListItem:hover {
@@ -37,14 +42,15 @@
   border-bottom: 3px ridge yellow;
 }
 
-/* Alineación del logo a la izquierda */
-.logo {
-  order: -1;
+.desktopMenuListItem:visited {
+  color: #fff; /* Color para los enlaces visitados */
 }
+
 
 /* Estilos para el menú hamburguesa */
 .mobileMenu {
-  display: none; /* Por defecto, oculto en pantallas grandes */
+  display: none;
+  /* Por defecto, oculto en pantallas grandes */
 }
 
 .mobileMenuBtn {
@@ -81,22 +87,27 @@
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
   .desktopMenu {
-    display: none; /* Oculto en pantallas pequeñas */
+    display: none;
+    /* Oculto en pantallas pequeñas */
   }
 
   .mobileMenu {
-    display: flex; /* Mostrado en pantallas pequeñas */
+    display: flex;
+    /* Mostrado en pantallas pequeñas */
   }
 
   .desktopMenuBtn {
-    display: flex; /* Ajusta para mostrar el botón de contacto en pantallas grandes */
+    display: flex;
+    /* Ajusta para mostrar el botón de contacto en pantallas grandes */
   }
 
   .logo {
-    height: 2rem; /* Ajusta el tamaño del logo en dispositivos móviles */
+    height: 2rem;
+    /* Ajusta el tamaño del logo en dispositivos móviles */
   }
 
   .mobileMenuImg {
-    height: 1.5rem; /* Ajusta el tamaño del logo en el menú hamburguesa */
+    height: 1.5rem;
+    /* Ajusta el tamaño del logo en el menú hamburguesa */
   }
 }
