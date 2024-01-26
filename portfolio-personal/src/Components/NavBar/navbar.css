@@ -8,19 +8,16 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: sticky;
+  justify-content: space-between; /* Ajusta espacio entre elementos */
   top: 0;
   z-index: 3;
+  position: sticky;
 }
 
-/* Estilos para el logo */
-.logo {
+.navbar img {
   object-fit: contain;
-  height: 3rem;
-  /* Ajusta el tamaño de la imagen */
-  width: 3rem;
-  z-index: 0;
+  height: 2rem;
+  width: auto;
 }
 
 /* Estilos para los enlaces del menú */

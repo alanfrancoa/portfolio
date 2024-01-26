@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import menu from '../../assets/menu.png';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
+import micro from '../../assets/microsoft.png';
 
 const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,11 +15,9 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <div className="left">
-        <img src={logo} alt="" className="logo" />
-      </div>
 
-      <div className="right">
+      <img src={logo} alt="" />
+  
         <div className="desktopMenu">
           <Link to="/" className="desktopMenuListItem">Home</Link>
           <Link to="/sobre-mi" className="desktopMenuListItem">Sobre mi</Link>
@@ -43,7 +42,7 @@ const NavBar = () => {
             </div>
           )}
         </div>
-      </div>
+      
     </nav>
   );
 }

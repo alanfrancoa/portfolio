@@ -1,25 +1,20 @@
-/* Añade estos estilos a tu archivo CSS */
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-box {
+.contact-card{
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  text-align: center;
+  padding: 1rem 1rem;
 }
 
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.contact-title{
+
+  font-size: 3rem;
+
 }
 
 input[type="submit"] {
@@ -36,29 +31,50 @@ input[type="submit"] {
   justify-content: center;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.field label {
-  font-size: 12px;
-  color: #777;
-  margin-bottom: 5px;
-}
-
-.field input,
-.field textarea {
-  margin: 4px;
-  min-width: 250px;
-  line-height: 1.5;
-  font-size: 14px;
-  padding: 8px;
-}
-
 .envio:hover {
   background-color: rgba(255, 255, 0, 0.2);
   border: 2px ridge yellow;
+}
+.success-message {
+  color: #4caf50; /* Color verde para mensajes de éxito */
+  background-color: #dff0d8; /* Fondo verde claro */
+  border: 1px solid #d6e9c6; /* Borde verde claro */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #d9534f; /* Color rojo para mensajes de error */
+  background-color: #f2dede; /* Fondo rojo claro */
+  border: 1px solid #ebccd1; /* Borde rojo claro */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* Estilos para los input y textarea */
+.text,
+textarea {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 8px; /* Espaciado interno */
+  margin-bottom: 10px; /* Margen inferior para separar los elementos */
+  width: 100%; /* Ancho completo */
+  height: 100%;
+  box-sizing: border-box; /* Incluye el ancho del borde y del relleno en el ancho total */
+}
+
+
+/* Estilos para el área del mensaje (div que contiene el textarea y el botón de envío) */
+.message-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  color: #fff; 
+  margin-bottom: 20px; 
+  font-size: 16px;
+  line-height: 1.5; 
+  padding: 2rem;
+
 }

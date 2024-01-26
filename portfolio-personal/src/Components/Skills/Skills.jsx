@@ -13,7 +13,10 @@ const Skills = () => {
   return (
     <section className='skills'>
         <h2 className='skills-title'>Skills</h2>
-        <span className='skills-desc'>Aqui falta desc</span>
+        <p className='description'>
+        Los años de estudio me han brindado variados conocimientos, aquí te muestro algunas de mis habilidades clave.
+        Cada barra de progreso representa mi nivel de conocimiento en dicha tecnología.
+      </p>
         <div className='skills-list'>
             <SkillsProgressRing imageUrl={Html} progress={80} color='green'/>
             <SkillsProgressRing imageUrl={java} progress={80} color='#FFFF00'/>
