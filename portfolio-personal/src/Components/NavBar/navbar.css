@@ -1,6 +1,6 @@
 .navbar {
   /* Estilos para el modo claro */
-  background-color: #fcfcfc; 
+  background-color: #e1e1e1; 
   color: #000;
 }
 
@@ -60,6 +60,20 @@
   background-color: transparent;
   color: white;
 }
+.envio.light {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+.toogleTheme:hover.dark {
+  background-color: rgba(255, 255, 0, 0.2);
+  border: 2px ridge yellow;
+}
+
+.toogleTheme:hover.light {
+  background-color: rgba(128, 0, 128, 0.2);
+  border: 2px ridge purple;
+}
 .imgBtn {
   object-fit: cover;
   height: 1rem;
@@ -75,9 +89,13 @@
   color: #fff; /* Color del texto para el modo oscuro */
 }
 
-.desktopMenuListItem:hover {
+.desktopMenuListItem:hover.dark {
   padding-bottom: 0.5rem;
   border-bottom: 3px ridge yellow;
+}
+.desktopMenuListItem:hover.light {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px ridge purple;
 }
 
 .desktopMenuListItem:visited {

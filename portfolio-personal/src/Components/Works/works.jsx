@@ -10,6 +10,8 @@ import ImageWithTooltip from '../ToolTip/toolTip'
 import ThemeContext from '../../context/themeContext'
 import github from '../../assets/github.png'
 import githubB from '../../assets/github-b.png'
+import carrito from '../Works/Icons/carrito.png'
+import tareas from '../Works/Icons/tareas.png'
 
 const Works = () => {
   const {theme} = useContext(ThemeContext)
@@ -27,6 +29,8 @@ const Works = () => {
             <ImageWithTooltip imageUrl={taTeTi} title="Tres en raya" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/02-tic-tac-toe" webSite= "https://tic-tac-toe-alanfrancoa.netlify.app" />
             <ImageWithTooltip imageUrl={conectaCuatro} title="Conecta 4" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/04-cuatro-en-linea" webSite= "https://conecta-cuatro-alanfrancoa.netlify.app" />
             <ImageWithTooltip imageUrl={mouseFollower} title="Seguidor de Cursor" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/03-mouse-follower" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
+            <ImageWithTooltip imageUrl={carrito} title="Carrito de compras" gitRepo="https://github.com/alanfrancoa/curso-react/tree/main/projects/70699" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
+            <ImageWithTooltip imageUrl={tareas} title="Organizador de tareas" gitRepo="https://github.com/alanfrancoa/app-stack-MERN/" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
             </div>
             <button className={`workBtn ${theme}`} onClick={() => handleClick('https://github.com/alanfrancoa')}>{theme == 'dark' ? <img src={github} alt="" className="imgBtn"/> : <img src={githubB} alt="" className="imgBtn"/> }Ver mas proyectos</button>
     </section>
