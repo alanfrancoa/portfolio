@@ -1,4 +1,4 @@
-.contact-card{
+.contact-card {
   margin: 0 auto;
   min-height: calc(100vh - 4rem);
   width: 100vw;
@@ -11,19 +11,26 @@
   padding: 1rem 1rem;
 }
 
-.contact-title{
+.contact-card.dark {
+  color: #fff;
+  background-color: #202020;
+}
+
+.contact-card.light {
+  color: #000;
+  background-color: #fcfcfc;
+}
+
+.contact-title {
 
   font-size: 3rem;
 
 }
 
-input[type="submit"] {
+.envio {
   margin-right: 1rem;
   height: 3rem;
   border-radius: 2rem;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
   padding: 0rem 1rem 0rem 1rem;
   font-size: 1rem;
   display: flex;
@@ -31,36 +38,70 @@ input[type="submit"] {
   justify-content: center;
 }
 
-.envio:hover {
+.envio.dark {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.envio.light {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.envio:hover.dark {
   background-color: rgba(255, 255, 0, 0.2);
   border: 2px ridge yellow;
 }
+
+.envio:hover.light {
+  background-color: rgba(128, 0, 128, 0.2);
+  border: 2px ridge purple;
+}
+
+
 .success-message {
-  color: #4caf50; /* Color verde para mensajes de éxito */
-  background-color: #dff0d8; /* Fondo verde claro */
-  border: 1px solid #d6e9c6; /* Borde verde claro */
+  color: #4caf50;
+  /* Color verde para mensajes de éxito */
+  background-color: #dff0d8;
+  /* Fondo verde claro */
+  border: 1px solid #d6e9c6;
+  /* Borde verde claro */
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .error-message {
-  color: #d9534f; /* Color rojo para mensajes de error */
-  background-color: #f2dede; /* Fondo rojo claro */
-  border: 1px solid #ebccd1; /* Borde rojo claro */
+  color: #d9534f;
+  /* Color rojo para mensajes de error */
+  background-color: #f2dede;
+  /* Fondo rojo claro */
+  border: 1px solid #ebccd1;
+  /* Borde rojo claro */
   padding: 10px;
   margin-bottom: 10px;
 }
+
 /* Estilos para los input y textarea */
 .text,
 textarea {
-  background-color: #fff; /* Fondo blanco */
-  color: #000; /* Texto negro */
-  border: 1px solid #ccc; /* Borde gris claro */
-  padding: 8px; /* Espaciado interno */
-  margin-bottom: 10px; /* Margen inferior para separar los elementos */
-  width: 100%; /* Ancho completo */
+  background-color: #fff;
+  /* Fondo blanco */
+  color: #000;
+  /* Texto negro */
+  border: 2px solid rgb(168, 168, 168);
+  /* Borde gris claro */
+  border-radius: 4px;
+  padding: 8px;
+  /* Espaciado interno */
+  margin-bottom: 10px;
+  /* Margen inferior para separar los elementos */
+  width: 100%;
+  /* Ancho completo */
   height: 100%;
-  box-sizing: border-box; /* Incluye el ancho del borde y del relleno en el ancho total */
+  box-sizing: border-box;
+  /* Incluye el ancho del borde y del relleno en el ancho total */
 }
 
 
@@ -71,10 +112,9 @@ textarea {
 }
 
 .description {
-  color: #fff; 
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   font-size: 16px;
-  line-height: 1.5; 
+  line-height: 1.5;
   padding: 2rem;
 
 }

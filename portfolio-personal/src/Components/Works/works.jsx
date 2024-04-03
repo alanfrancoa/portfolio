@@ -1,4 +1,4 @@
-//import React from 'react'
+import { useContext } from 'react'
 import './works.css' 
 import buscadorPeliculas from '../Works/Icons/buscador-peliculas.png'
 import buscadorClima from '../Works/Icons/buscador-clima.png'
@@ -7,10 +7,17 @@ import logoX from '../Works/Icons/logo-x.png'
 import mouseFollower from '../Works/Icons/mouse-follower.png'
 import taTeTi from '../Works/Icons/tateti.png'
 import ImageWithTooltip from '../ToolTip/toolTip'
+import ThemeContext from '../../context/themeContext'
+import github from '../../assets/github.png'
+import githubB from '../../assets/github-b.png'
 
 const Works = () => {
+  const {theme} = useContext(ThemeContext)
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  }
   return (
-    <section id="works">
+    <section className={`works ${theme}`}>
         <h2 className="worksTitle">Mi portfolio</h2>
         <span className="worksDesc">Haz click en las imagenes, para ver mas sobre los proyectos que hice.</span>
             <div className="worksImgs">
@@ -21,7 +28,7 @@ const Works = () => {
             <ImageWithTooltip imageUrl={conectaCuatro} title="Conecta 4" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/04-cuatro-en-linea" webSite= "https://conecta-cuatro-alanfrancoa.netlify.app" />
             <ImageWithTooltip imageUrl={mouseFollower} title="Seguidor de Cursor" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/03-mouse-follower" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
             </div>
-            <button className="workBtn">Ver más</button>
+            <button className={`workBtn ${theme}`} onClick={() => handleClick('https://github.com/alanfrancoa')}>{theme == 'dark' ? <img src={github} alt="" className="imgBtn"/> : <img src={githubB} alt="" className="imgBtn"/> }Ver mas proyectos</button>
     </section>
   )
 }

@@ -1,6 +1,16 @@
-/* Estilos para el contenedor navbar */
 .navbar {
-  background-color: rgba(30, 30, 30, 0.56);
+  /* Estilos para el modo claro */
+  background-color: #fcfcfc; 
+  color: #000;
+}
+
+.navbar.dark {
+  /* Estilos para el modo oscuro */
+  background-color: #333; 
+  color: rgb(255, 255, 255); 
+}
+
+.navbar {
   height: 5rem;
   width: 100vw;
   max-width: 75rem;
@@ -8,7 +18,7 @@
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ajusta espacio entre elementos */
+  justify-content: space-between;
   top: 0;
   z-index: 3;
   position: sticky;
@@ -20,18 +30,49 @@
   width: auto;
 }
 
+
+
 /* Estilos para los enlaces del menú */
 .desktopMenu {
   display: flex;
   align-items: center;
 }
 
-/* Estilos para los enlaces del menú */
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
   text-decoration: none;
-  color: #fff; /* Color predeterminado para los enlaces no visitados */
+}
+
+.toogleTheme{
+  margin-right: 1rem;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toogleTheme.dark{
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+.imgBtn {
+  object-fit: cover;
+  height: 1rem;
+  width: auto;
+  margin: 0;
+  margin-right: 1rem;
+}
+.desktopMenuListItem.light {
+  color: #000; /* Color del texto para el modo claro */
+}
+
+.desktopMenuListItem.dark {
+  color: #fff; /* Color del texto para el modo oscuro */
 }
 
 .desktopMenuListItem:hover {
@@ -40,23 +81,33 @@
 }
 
 .desktopMenuListItem:visited {
-  color: #fff; /* Color para los enlaces visitados */
+  color: inherit; /* Hereda el color del texto */
 }
-
 
 /* Estilos para el menú hamburguesa */
 .mobileMenu {
   display: none;
-  /* Por defecto, oculto en pantallas grandes */
+}
+
+.mobileMenu.light {
+  background-color: #f8f9fa; /* Color de fondo para el modo claro */
+}
+
+.mobileMenu.dark {
+  background-color: #333; /* Color de fondo para el modo oscuro */
 }
 
 .mobileMenuBtn {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
   display: flex;
   align-items: center;
+  color: #000; /* Color del texto para el modo claro */
+}
+
+.mobileMenuBtn.dark {
+  color: #fff; /* Color del texto para el modo oscuro */
 }
 
 .mobileMenuImg {
@@ -69,42 +120,47 @@
   position: absolute;
   top: 60px;
   left: 0;
-  background-color: #333;
   width: 100%;
   z-index: 1;
 }
 
+.mobileMenuItems.light {
+  background-color: #e9ecef; /* Color de fondo para el modo claro */
+}
+
+.mobileMenuItems.dark {
+  background-color: #555; /* Color de fondo para el modo oscuro */
+}
+
 .mobileMenuItems a {
   padding: 10px;
-  color: #fff;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+  color: #000; /* Color del texto para el modo claro */
+}
+
+.mobileMenuItems.dark a {
+  color: #fff; /* Color del texto para el modo oscuro */
 }
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
   .desktopMenu {
     display: none;
-    /* Oculto en pantallas pequeñas */
   }
 
   .mobileMenu {
     display: flex;
-    /* Mostrado en pantallas pequeñas */
   }
 
   .desktopMenuBtn {
     display: flex;
-    /* Ajusta para mostrar el botón de contacto en pantallas grandes */
   }
 
   .logo {
     height: 2rem;
-    /* Ajusta el tamaño del logo en dispositivos móviles */
   }
 
   .mobileMenuImg {
     height: 1.5rem;
-    /* Ajusta el tamaño del logo en el menú hamburguesa */
   }
 }

@@ -1,4 +1,4 @@
-#about{
+.about{
     overflow: hidden;
     width: 100vw;
     max-width: 65rem;
@@ -9,20 +9,39 @@
     text-align: center;
     margin: 0 auto;
 }
+.about.light{
+    background-color: #fcfcfc;
+}
+.about.dark{
+    background-color: #202020;
+}
 
 .aboutMe{
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1rem;
-
 }
+.aboutMe.light{
+    color: #000;
+}
+.aboutMe.dark{
+    color: #fff;
+}
+
 .aboutMeText{
     font-size: 400;
     font-size: 1rem;
     max-width: 55rem;
     padding: 0 2rem;
 }
+.aboutMeText.light{
+    color: #000;
+}
+.aboutMeText.dark{
+    color: #fff;
+}
+
 .aboutMeBars{
     margin:1.5rem;
     width: 100vw;
@@ -34,8 +53,14 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
+}
+.aboutMeBar.light{
+    background: rgb(220, 220, 220);
+}
+.aboutMeBar.dark{
     background: rgb(50, 50, 50);
 }
+
 .aboutMeImg{
     object-fit: cover;
     height: 3rem;
@@ -46,6 +71,12 @@
 .aboutMeBarText>p{
     font-size: 1rem;
     font-weight: 300;
+}
+.aboutMeBarText.light{
+    color: #000;
+}
+.aboutMeBarText.dark{
+    color: #fff;
 }
 @media screen and (max-width: 720px) {
     .aboutMeBarTextM>p{

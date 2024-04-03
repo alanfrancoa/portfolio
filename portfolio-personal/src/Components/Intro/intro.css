@@ -1,101 +1,144 @@
 #intro {
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bground.dark {
+  background-color: #202020;
+}
+
+.bground.light {
+  background-color: #fcfcfc;
+}
+
+.bg {
+  position: absolute;
+  top: 0rem;
+  left: 20%;
+  object-fit: none;
+  height: 100vh;
+  size: 80vh;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100wh;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hola {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.hola.dark {
+  color: yellow;
+}
+
+.hola.light {
+  color: purple;
+}
+
+.introName.dark {
+  color: yellow;
+}
+
+.introName.light {
+  color: purple;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.introPara.light {
+  color: black;
+}
+
+.introText.light {
+  color: black;
+}
+
+.buttonsIntro {
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.introBtn {
+  margin-right: 1rem;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  z-index: 3; /* Ajusta el z-index para que esté por encima de otros elementos */
+}
+
+.introBtn.dark {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.introBtn.light {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.introBtn:hover.dark {
+  background-color: rgba(255, 255, 0, 0.2);
+  border: 2px ridge yellow;
+}
+
+.introBtn:hover.light {
+  background-color: rgba(128, 0, 128, 0.2);
+  border: 2px ridge purple;
+}
+
+.imgBtn {
+  object-fit: cover;
+  height: 1rem;
+  width: auto;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 840px) {
   .bg {
-    position: absolute;
-    top: 0rem;
-    left: 20%;
-    z-index: -1;
-    object-fit: none;
-    height: 100vh;
-    size: 80vh;
+    left: 0; /* Ajuste para pantallas más pequeñas */
   }
-  
+
   .introContent {
-    height: 100vh;
-    width: 100wh;
-    padding: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 7vw;
   }
-  
+
   .hola {
-    font-size: 1.75rem;
-    font-weight: 100;
-  }
-  
-  .introName {
-    color: yellow;
-  }
-  
-  .introPara {
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 4.5vw;
   }
   
   .buttonsIntro {
-    align-items: center;
-    display: flex;
-    margin-top: 1rem;
+    flex-wrap: wrap; /* Hace que los botones se ajusten a la pantalla en lugar de ocultarse */
   }
-  
-  .introBtn {
-    margin-right: 1rem;
-    height: 3rem;
-    border-radius: 2rem;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    padding: 0rem 1rem 0rem 1rem;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    right: -70vw;
   }
-  
-  .introBtn:hover {
-    background-color: rgba(255, 255, 0, 0.2);
-    border: 2px ridge yellow;
-  }
-  
-  .imgBtn {
-    object-fit: cover;
-    height: 1rem;
-    width: auto;
-    margin: 0;
-    margin-right: 1rem;
-  }
-  
-  @media screen and (max-width: 840px) {
-    .bg {
-      left: 0; /* Ajuste para pantallas más pequeñas */
-    }
-  
-    .introContent {
-      font-size: 7vw;
-    }
-  
-    .hola {
-      font-size: 4.5vw;
-    }
-    
-    .buttonsIntro {
-      flex-wrap: wrap; /* Hace que los botones se ajusten a la pantalla en lugar de ocultarse */
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .bg {
-      right: -70vw;
-    }
-  }
+}

@@ -1,8 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useContext } from 'react';
 import './ContactUs.css';
 import emailjs from '@emailjs/browser';
+import ThemeContext from '../../context/themeContext';
 
 const ContactUs = () => {
+  const {theme} = useContext(ThemeContext)
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -27,7 +29,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='contact-card'>
+    <div className={`contact-card ${theme}`}>
       <h2 className='contact-title'>Contacto</h2>
       <p className='description'>
         Si tenés alguna pregunta o comentario, por favor házmelo saber a través de este formulario.
@@ -43,7 +45,7 @@ const ContactUs = () => {
           <input type='email' name='user_email' className='text' />
           <div className='message-area'>
             <textarea name='message' placeholder='Escribe tu mensaje...' />
-            <input type='submit' value='Enviar' className='envio' />
+            <input type='submit' value='Enviar' className={`envio ${theme}`} />
           </div>
         </form>
       </div>
