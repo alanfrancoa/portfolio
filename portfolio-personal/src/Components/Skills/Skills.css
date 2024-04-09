@@ -10,12 +10,7 @@
     text-align: center;
     padding: 1rem 1rem;
 }
-.skills.dark{
-    background-color: #202020;
-}
-.skills.light{
-    background-color: #fcfcfc;
-}
+
 .skills-title{
     margin: 1rem 0;
     font-size: 3rem;

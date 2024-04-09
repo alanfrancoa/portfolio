@@ -7,14 +7,6 @@
   position: relative;
 }
 
-.bground.dark {
-  background-color: #202020;
-}
-
-.bground.light {
-  background-color: #fcfcfc;
-}
-
 .bg {
   position: absolute;
   top: 0rem;
@@ -65,10 +57,18 @@
 .introPara.light {
   color: black;
 }
+.introPara.dark {
+  color: #fff;
+}
 
 .introText.light {
   color: black;
 }
+
+.introText.dark {
+  color: #fff;
+}
+
 
 .buttonsIntro {
   align-items: center;

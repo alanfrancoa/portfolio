@@ -1,0 +1,14 @@
+.cuerpo{
+    height: 100svh;
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.cuerpo.light{
+    background: #fcfcfc;
+    
+}
+.cuerpo.dark{
+    background: #202020;
+}
+
