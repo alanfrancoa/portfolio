@@ -30,7 +30,7 @@ const Works = () => {
             <ImageWithTooltip imageUrl={conectaCuatro} title="Conecta 4" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/04-cuatro-en-linea" webSite= "https://conecta-cuatro-alanfrancoa.netlify.app" />
             <ImageWithTooltip imageUrl={mouseFollower} title="Seguidor de Cursor" gitRepo="https://github.com/alanfrancoa/practica-react/tree/main/projects/03-mouse-follower" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
             <ImageWithTooltip imageUrl={carrito} title="Carrito de compras" gitRepo="https://github.com/alanfrancoa/curso-react/tree/main/projects/70699" webSite= "https://proyecto-carrito-react.netlify.app/" />
-            <ImageWithTooltip imageUrl={tareas} title="Organizador de tareas" gitRepo="https://github.com/alanfrancoa/app-stack-MERN/" webSite= "https://mouse-cursor-alanfrancoa.netlify.app" />
+            <ImageWithTooltip imageUrl={tareas} title="Organizador de tareas" gitRepo="https://github.com/alanfrancoa/app-stack-MERN/" webSite= "#" />
             </div>
             <button className={`workBtn ${theme}`} onClick={() => handleClick('https://github.com/alanfrancoa')}>{theme == 'dark' ? <img src={github} alt="" className="imgBtn"/> : <img src={githubB} alt="" className="imgBtn"/> }Ver mas proyectos</button>
     </section>
