@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import './intro.css'; // Importa la hoja de estilos
 import alan from '../../assets/Alan-image.png';
 import portfolio from '../../assets/portfolio.png';

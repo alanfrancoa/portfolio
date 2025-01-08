@@ -1,0 +1,12 @@
+/* Reset básico para que no haya márgenes ni rellenos indeseados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general para el body */
+  body {
+    font-family: 'Darker Grotesque', sans-serif;
+
+  }
