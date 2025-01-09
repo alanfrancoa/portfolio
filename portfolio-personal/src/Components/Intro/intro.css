@@ -122,6 +122,7 @@
 @media screen and (max-width: 840px) {
   .bg {
     left: 0; /* Ajuste para pantallas más pequeñas */
+    display: none;
   }
 
   .introContent {
@@ -139,6 +140,7 @@
 
 @media screen and (max-width: 480px) {
   .bg {
-    right: -70vw;
+    left: 0; /* Ajuste para pantallas más pequeñas */
+    display: none;
   }
 }

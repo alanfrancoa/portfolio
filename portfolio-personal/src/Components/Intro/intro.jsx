@@ -18,10 +18,10 @@ const Intro = () => {
     <section id="intro" className={`bground ${theme}`}> 
         <div className="introContent">
             <span className={`hola ${theme}`}>Hola,</span>
-            <span className={`introText ${theme}`}>soy <span className={`introName ${theme}`}>Alan</span><br /> Frontend Developer</span>
-            <p className={`introPara ${theme}`}>Soy un apasionado del desarrollo web, <br/>siempre en búsqueda de inspiración creativa y ansioso por adquirir nuevos conocimientos.<br/> Cada proyecto es un nuevo desafío que me entusiasma abordar. <br/>Siempre estoy aprendiendo y explorando nuevas formas de mejorar mis habilidades. <br/>¿Listo para crear algo increíble juntos?</p>
+            <span className={`introText ${theme}`}>soy <span className={`introName ${theme}`}>Alan</span><br /> Desarrollador de Software</span>
+            <p className={`introPara ${theme}`}>Soy un apasionado del desarrollo de software, <br/>siempre en búsqueda de inspiración creativa y ansioso por adquirir nuevos conocimientos.<br/> Cada proyecto es un nuevo desafío que me entusiasma abordar. <br/>Siempre estoy aprendiendo y explorando nuevas formas de mejorar mis habilidades. <br/>¿Listo para crear algo increíble juntos?</p>
             <div className="buttonsIntro">
-            <button className={`introBtn ${theme}`} onClick={() => handleClick('https://drive.google.com/file/d/1TO6UBT9DeoZvWz7b1pFDi8YvkrmwY0tb/view?usp=sharing')}>{theme == 'dark' ? <img src={portfolio} alt="" className="imgBtn"/> : <img src={portfolioB} alt="" className="imgBtn"/> }Ver mi CV</button>
+            <button className={`introBtn ${theme}`} onClick={() => handleClick('https://drive.google.com/file/d/1WDkTOcOoZ3nIrwn8fTDnhM1clS48El7c/view?usp=sharing')}>{theme == 'dark' ? <img src={portfolio} alt="" className="imgBtn"/> : <img src={portfolioB} alt="" className="imgBtn"/> }Ver mi CV</button>
             <button className={`introBtn ${theme}`} onClick={() => handleClick('https://www.linkedin.com/in/alan-alvarez-0b4644160/')}>{theme == 'dark' ? <img src={linkedIn} alt="" className="imgBtn"/> : <img src={linkedInB} alt="" className="imgBtn"/> }Ver mi LinkedIn</button>
             </div>
         </div>

@@ -22,15 +22,24 @@ function ImageWithTooltip({ imageUrl, title, gitRepo, webSite }) {
       <img src={imageUrl} alt="Imagen" />
       {showTitle && <div className={`tooltip ${theme}`}>
         <h3 className="repoImageTitle">{title}</h3>
-        <button className={`buttonRepo ${theme}`} onClick={() => handleClick(webSite)}><img src={imageLink} alt="" /> Ir al sitio</button>
-        <button className={`buttonRepo ${theme}`} onClick={() => handleClick(gitRepo)}><img src={gitHub} alt="" /> Ver codigo</button></div>}
+        {webSite !== "#" && (
+          <button className={`buttonRepo ${theme}`} onClick={() => handleClick(webSite)}>
+            <img src={imageLink} alt="" /> Ir al sitio
+          </button>
+        )}
+        <button className={`buttonRepo ${theme}`} onClick={() => handleClick(gitRepo)}>
+          <img src={gitHub} alt="" /> Ver código
+        </button>
+      </div>}
     </div>
   );
 }
+
 ImageWithTooltip.propTypes = {
   imageUrl: PropTypes.string.isRequired, // URL de la imagen
   title: PropTypes.string.isRequired,
   gitRepo: PropTypes.string.isRequired,
   webSite: PropTypes.string.isRequired,
 };
+
 export default ImageWithTooltip;
