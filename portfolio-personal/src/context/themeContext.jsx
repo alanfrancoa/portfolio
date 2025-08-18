@@ -1,5 +1,7 @@
 // ThemeContext.js
-import React, { createContext, useState } from 'react';
+import { createContext, useState } from 'react';
+import PropTypes from 'prop-types';
+import { LanguageProvider } from './languageContext';
 
 const ThemeContext = createContext();
 
@@ -13,9 +15,13 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+      <LanguageProvider>
+        {children}
+      </LanguageProvider>
     </ThemeContext.Provider>
   );
 };
-
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 export default ThemeContext;

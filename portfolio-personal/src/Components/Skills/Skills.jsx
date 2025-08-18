@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import './Skills.css'
 import SkillsProgressRing from '../ProgressRing/SkillsProgressRing.jsx'
-import React from 'react'
 import Html from '../Skills/Icons/html-5.png'
 import java from '../Skills/Icons/java.png'
 import gitIcon from '../Skills/Icons/git-icon.png'
@@ -13,15 +12,17 @@ import php from '../Skills/Icons/php.png'
 import net from '../Skills/Icons/net.png'
 import sql from '../Skills/Icons/mysql.png'
 import ThemeContext from '../../context/themeContext'
+import { useLanguage } from '../../context/languageContext'
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext)
+  const { t } = useLanguage()
+  
   return (
     <section className={`skills ${theme}`}>
-      <h2 className={`skills-title ${theme}`}>Skills</h2>
+      <h2 className={`skills-title ${theme}`}>{t('skillsTitle')}</h2>
       <p className={`description ${theme}`}>
-        Los años de estudio me han brindado variados conocimientos, aquí te muestro algunas de mis habilidades clave.
-        Cada barra de progreso representa mi nivel de conocimiento en dicha tecnología.
+        {t('skillsDescription')}
       </p>
       <div className='skills-list'>
         <SkillsProgressRing imageUrl={Html} progress={80} color='violet' />

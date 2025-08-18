@@ -1,30 +1,48 @@
+/* Forzar fondo opaco en menú hamburguesa móvil en Intro */
+.mobileMenuItems.light {
+  background-color: #e9ecef !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.mobileMenuItems.dark {
+  background-color: #222 !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
 #intro {
   height: calc(100vh - 4rem);
   width: 100vw;
   max-width: 75rem;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 
 .bg {
-  position: absolute;
-  top: 0rem;
-  left: 20%;
-  object-fit: none;
-  height: 100vh;
-  size: 80vh;
+  position: relative;
+  object-fit: contain;
+  height: 80vh;
+  max-width: 40vw;
+  margin-right: 2rem;
+  z-index: 2;
 }
 
 .introContent {
-  height: 100vh;
-  width: 100wh;
+  height: auto;
+  width: 55vw;
+  min-width: 300px;
   padding: 1rem;
   font-size: 3rem;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 3;
 }
 
 .hola {
@@ -120,27 +138,55 @@
 }
 
 @media screen and (max-width: 840px) {
+  #intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
   .bg {
-    left: 0; /* Ajuste para pantallas más pequeñas */
-    display: none;
+    position: relative;
+    left: 0;
+    display: block;
+    height: 40vw;
+    max-width: 80vw;
+    margin: 0 auto 2rem auto;
   }
-
   .introContent {
+    width: 90vw;
     font-size: 7vw;
+    min-width: unset;
+    height: auto;
+    margin-bottom: 2rem;
   }
-
   .hola {
     font-size: 4.5vw;
   }
-  
   .buttonsIntro {
-    flex-wrap: wrap; /* Hace que los botones se ajusten a la pantalla en lugar de ocultarse */
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 480px) {
+  #intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+  }
   .bg {
-    left: 0; /* Ajuste para pantallas más pequeñas */
-    display: none;
+    position: relative;
+    left: 0;
+    display: block;
+    height: 50vw;
+    max-width: 90vw;
+    margin: 0 auto 1rem auto;
+  }
+  .introContent {
+    width: 98vw;
+    font-size: 6vw;
+    min-width: unset;
+    height: auto;
+    margin-bottom: 1rem;
   }
 }
