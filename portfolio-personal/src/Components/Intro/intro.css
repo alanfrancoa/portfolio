@@ -159,6 +159,9 @@
     height: auto;
     margin-bottom: 2rem;
   }
+  .intro-img {
+    display: none;
+  }
   .hola {
     font-size: 4.5vw;
   }
@@ -181,6 +184,9 @@
     height: 50vw;
     max-width: 90vw;
     margin: 0 auto 1rem auto;
+  }
+  .intro-img {
+    display: none;
   }
   .introContent {
     width: 98vw;

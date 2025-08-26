@@ -27,7 +27,7 @@ const Intro = () => {
             <button className={`introBtn ${theme}`} onClick={() => handleClick('https://www.linkedin.com/in/alan-f-alvarez/')}>{theme == 'dark' ? <img src={linkedIn} alt="" className="imgBtn"/> : <img src={linkedInB} alt="" className="imgBtn"/> }{t('viewLinkedIn')}</button>
             </div>
         </div>
-        <img src={alan} alt="Alan-background" className="bg" />
+  <img src={alan} alt="Alan-background" className="bg intro-img" />
     </section>
   )
 }
