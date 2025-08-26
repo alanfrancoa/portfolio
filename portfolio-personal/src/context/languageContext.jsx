@@ -39,6 +39,7 @@ const translations = {
     worksButton: 'Ver más proyectos',
     
     // Project titles (for tooltips)
+    mutualApp: 'Mutual 17 de Junio(React + .NET)',
     turneraApp: 'Gestión de turnos (.NET)',
     veterinariaApp: 'Gestor de Veterinarias (.NET)',
     universidadApp: 'SIU Diaguita - Gestión Universitaria (PHP)',
@@ -107,6 +108,7 @@ const translations = {
     worksButton: 'See more projects',
     
     // Project titles (for tooltips)
+    mutualApp: 'Mutual 17 de Junio (React + .NET)',
     turneraApp: 'Appointment Management (.NET)',
     veterinariaApp: 'Veterinary Management (.NET)',
     universidadApp: 'SIU Diaguita - University Management (PHP)',
