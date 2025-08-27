@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import './SkillsProgressRing.css'
 
-const ProgressRing = ({ imageUrl, progress, color }) => {
+const ProgressRing = ({ imageUrl, progress, color, onClick }) => {
   const radius = 100;
   const strokeWidth = 20;
   const normalizedRadius = radius - strokeWidth * 2;
@@ -9,7 +9,11 @@ const ProgressRing = ({ imageUrl, progress, color }) => {
   const offset = circumference - (progress / 100) * circumference;
 
   return (
-    <div className="progress-ring">
+    <div
+      className="progress-ring"
+      onClick={onClick}
+      style={{ cursor: 'pointer' }}
+    >
       <svg height={radius * 2} width={radius * 2}>
         <circle
           className="ring-circle"
@@ -32,6 +36,7 @@ ProgressRing.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   progress: PropTypes.number.isRequired,
   color: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
 }
 
 export default ProgressRing
