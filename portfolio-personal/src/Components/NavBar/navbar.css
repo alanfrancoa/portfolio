@@ -150,7 +150,13 @@
 }
 
 .mobileMenuBtn.dark {
+  background-color: #333; /* Igual que el navbar oscuro */
   color: #fff; /* Color del texto para el modo oscuro */
+  border: none;
+  }
+
+  .mobileMenuBtn.dark .mobileMenuImg {
+    filter: brightness(0) invert(1); /* Hace el icono blanco en modo oscuro */
 }
 
 .mobileMenuImg {
