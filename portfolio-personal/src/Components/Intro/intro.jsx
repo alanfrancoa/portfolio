@@ -23,7 +23,7 @@ const Intro = () => {
             <span className={`introText ${theme}`}>{t('iAm')} <span className={`introName ${theme}`}>{t('name')}</span><br /> {t('profession')}</span>
             <p className={`introPara ${theme}`}>{t('introDescription')}</p>
             <div className="buttonsIntro">
-            <button className={`introBtn ${theme}`} onClick={() => handleClick('https://drive.google.com/file/d/1mU7SJGJHrDts_Ihm-fTPxSHtnYenqBEp/view?usp=sharing')}>{theme == 'dark' ? <img src={portfolio} alt="" className="imgBtn"/> : <img src={portfolioB} alt="" className="imgBtn"/> }{t('viewCV')}</button>
+            <button className={`introBtn ${theme}`} onClick={() => handleClick('https://drive.google.com/drive/folders/1CfzJPAtVMq-nq5lnKGqJMbYiZISoRsFk?usp=sharing')}>{theme == 'dark' ? <img src={portfolio} alt="" className="imgBtn"/> : <img src={portfolioB} alt="" className="imgBtn"/> }{t('viewCV')}</button>
             <button className={`introBtn ${theme}`} onClick={() => handleClick('https://www.linkedin.com/in/alan-f-alvarez/')}>{theme == 'dark' ? <img src={linkedIn} alt="" className="imgBtn"/> : <img src={linkedInB} alt="" className="imgBtn"/> }{t('viewLinkedIn')}</button>
             </div>
         </div>
