@@ -11,6 +11,8 @@ import reactJs from '../Skills/Icons/react.png'
 import php from '../Skills/Icons/php.png'
 import net from '../Skills/Icons/net.png'
 import sql from '../Skills/Icons/mysql.png'
+import python from '../Skills/Icons/python.png'
+import docker from '../Skills/Icons/docker.png'
 import ThemeContext from '../../context/themeContext'
 import { useLanguage } from '../../context/languageContext'
 
@@ -35,6 +37,8 @@ const Skills = () => {
         <SkillsProgressRing imageUrl={php} progress={80} color='#800080' />
         <SkillsProgressRing imageUrl={net} progress={80} color='#4B0082' />
         <SkillsProgressRing imageUrl={sql} progress={80} color='#DC143C' />
+        <SkillsProgressRing imageUrl={python} progress={80} color='#ebfc00ff' />
+        <SkillsProgressRing imageUrl={docker} progress={80} color='#3200fcff' />
       </div>
     </section>
   )
